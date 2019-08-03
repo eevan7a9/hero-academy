@@ -12,10 +12,45 @@
 main {
   font-family: "Roboto", sans-serif;
 }
+img {
+  width: 100%;
+}
 .container {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   padding: 0 15px;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(131, 122, 122);
+}
+.logo {
+  padding: 5px 5px;
+  display: flex;
+  width: 200px;
+}
+.logo img {
+  width: 60px;
+  height: 50px;
+}
+.logo p {
+  display: flex;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.navbar ul li {
+  padding: 20px 15px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
 }
