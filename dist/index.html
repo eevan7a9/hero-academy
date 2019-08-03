@@ -12,5 +12,13 @@
   <body>
     <h1>Hello World<i class="fas fa-user"></i></h1>
     <i class="fas fa-user"></i>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/simple-lightbox.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      $(function() {
+        const $gallery = $(".gallery a").simpleLightbox();
+      });
+    </script>
   </body>
 </html>
