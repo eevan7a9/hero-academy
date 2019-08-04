@@ -22,10 +22,13 @@ img {
   overflow: hidden;
   padding: 0 15px;
 }
+.navbar {
+  width: 100%;
+}
 .navbar .container {
   display: flex;
   justify-content: space-between;
-  background: rgb(131, 122, 122);
+  background: rgb(236, 235, 235);
 }
 .logo {
   padding: 5px 5px;
@@ -53,4 +56,31 @@ img {
   color: var(--primary-color);
   font-size: 18px;
   font-weight: 700;
+}
+.showcase-first {
+  height: 100%;
+}
+.showcase-first .container {
+  background: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(1fr, 3);
+  grid-template-rows: 1fr;
+  grid-gap: 13px;
+}
+.showcase-headings {
+  grid-column: 1/2;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.showcase-headings h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+.showcase-headings p {
+  font-size: 20px;
+}
+.showcase-image {
+  grid-column: 2/3;
 }
