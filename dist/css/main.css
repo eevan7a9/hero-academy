@@ -6,11 +6,13 @@
   padding: 0;
 }
 :root {
-  --primary-color: #222;
-  --secondary-color: #444;
+  --primary-color: #333;
+  --secondary-color: rgb(231, 231, 231);
+  --bg-primary: rgb(49, 121, 253);
 }
 main {
   font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
 }
 img {
   width: 100%;
@@ -28,7 +30,7 @@ img {
 .navbar .container {
   display: flex;
   justify-content: space-between;
-  background: rgb(236, 235, 235);
+  background: whitesmoke;
 }
 .logo {
   padding: 5px 5px;
@@ -57,14 +59,14 @@ img {
   font-size: 18px;
   font-weight: 700;
 }
-.showcase-first {
+/* Section showcase */
+.section-showcase {
   height: 100%;
 }
-.showcase-first .container {
+.section-showcase .container {
   background: whitesmoke;
   display: grid;
   grid-template-columns: repeat(1fr, 3);
-  grid-template-rows: 1fr;
   grid-gap: 13px;
 }
 .showcase-headings {
@@ -81,6 +83,32 @@ img {
 .showcase-headings p {
   font-size: 20px;
 }
+.showcase-headings button {
+  cursor: pointer;
+  width: 120px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 20px;
+  border-color: var(--bg-primary);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background: var(--bg-primary);
+  color: var(--secondary-color);
+}
+.showcase-headings button:hover {
+  background: navy;
+}
 .showcase-image {
   grid-column: 2/3;
+}
+/* Section second */
+.section-second {
+  background: url("../img/city-protected.jpg") no-repeat top center/cover;
+  width: 100%;
+  position: relative;
+  height: 700px;
 }
