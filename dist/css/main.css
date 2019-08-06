@@ -265,6 +265,14 @@ galler a {
   background-color: whitesmoke;
   border-color: #333;
 }
+.credit,
+.credit a {
+  background: #333;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+
 /* Media Queries  */
 @media (max-width: 770px) {
   .section-showcase .container p {
