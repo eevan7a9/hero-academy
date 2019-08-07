@@ -36,7 +36,7 @@
             hero is someone who is willing to help others in his or her best
             capacity.
           </p>
-          <button>
+          <button onclick="openModal()">
             Subscribe
           </button>
         </div>
@@ -62,10 +62,12 @@
     </section>
     <section class="section-third">
       <div class="container">
+        
         <div>
           <i class="fas fa-shield-alt" style="font-size: 80px"></i>
           <h1>We Protect The Weak</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam consectetur at itaque officiis similique quam nam quos deleniti possimus ipsam.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam consectetur at itaque officiis
+            similique quam nam quos deleniti possimus ipsam.</p>
           <button>Read more</button>
         </div>
         <div>
@@ -77,12 +79,41 @@
         <div>
           <i class="fas fa-user-secret" style="font-size: 80px"></i>
           <h1>Secured & Private</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque cum minima quis expedita totam ex eum incidunt eos, voluptatum maiores.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque cum minima quis expedita totam ex eum
+            incidunt eos, voluptatum maiores.</p>
           <button>Read more</button>
         </div>
       </div>
     </section>
     <section class="section-fourth">
+      <div class="container">
+        <div  class="left-hero">
+          <div class="info-hero">
+            <h1>S Class: #4 </h1>
+            <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae adipisci voluptatem quis placeat est doloremque?"</p>
+            <h5>- John Doe</h5>
+          </div>
+            <img src="./img/lady.png" alt="purple">
+        </div>
+        <div  class="right-hero">
+            <img src="./img/s_man.png" alt="">
+          <div class="info-hero">
+            <h1>S Class: #9</h1>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tenetur aliquid non cupiditate placeat asperiores!"</p>
+            <h5>-Jane Doe</h5>
+          </div>
+        </div>
+        <div  class="left-hero">
+            <div class="info-hero">
+              <h1>S Class: #3 </h1>
+              <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae adipisci voluptatem quis placeat est doloremque?"</p>
+              <h5>- John Doe</h5>
+            </div>
+              <img src="./img/s_dad.png" alt="purple">
+          </div>
+      </div>
+    </section>
+    <section class="section-fifth">
       <div class="container">
         <h1>GALLERY OF HEROES</h1>
         <div class="gallery">
@@ -132,6 +163,24 @@
     <section class="credit">
       <p>@2019 : <a href="https://github.com/eevan7a9">https://github.com/eevan7a9</a></p>
     </section>
+       <!-- Modal -->
+       <div id="modal_container" class="modal-container">
+          <div id="modal" class="modal">
+            <div class="close">
+                <i class="fas fa-times" onclick="closeModal()"></i>
+            </div>
+            <h1>Subscribe:</h1>
+            <p>Get the latest News about Hero Academy and more.</p>
+            <img src="./img/hero_logo.png" alt="hero">
+            <div>
+              <form action="">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="myname@gmail.com">
+                  <button onclick="closeModal()">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="./js/simple-lightbox.min.js"></script>
