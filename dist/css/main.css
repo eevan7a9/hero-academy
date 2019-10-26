@@ -45,9 +45,17 @@ img {
   );
 }
 .navbar .container {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+.burger {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+  right: 0;
+  top: 1rem;
+  margin-right: 10px;
 }
 .logo {
   padding: 5px 5px;
@@ -66,13 +74,16 @@ img {
   font-family: "Luckiest Guy", cursive;
   align-items: center;
 }
-.navbar ul {
+.nav-item-container {
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-between;
   list-style-type: none;
 }
 .navbar ul li {
   cursor: pointer;
+  /* background: red; */
+  text-align: center;
   padding: 20px 20px;
 }
 .navbar ul li a {
@@ -92,7 +103,7 @@ img {
 .section-showcase {
   display: flex;
   align-items: center;
-
+  background: rgba(65, 63, 63, 0.151);
   height: 90vh;
 }
 .section-showcase .container {
@@ -108,17 +119,19 @@ img {
   align-items: center;
 }
 .showcase-headings h1 {
-  font-size: 50px;
+  font-size: 60px;
   letter-spacing: 2px;
   font-family: "Staatliches", cursive;
-  text-shadow: -1px 0 #756660, 0 1px #a6a092, 0.5px 0 #ceb4a6, 0 -1px #a49584;
+  color: rgb(234, 230, 255);
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  text-shadow: -1px 0 #606775, 0 1px #a6a092, 0.5px 0 #ceb4a6, 0 -1px #a49584;
 }
 .showcase-headings p {
   font-size: 20px;
   line-height: 35px;
   padding: 40px 10px;
-  background: #020a3634;
-  color: rgb(201, 211, 219);
+  color: aliceblue;
   text-shadow: 3px 3px 5px rgb(5, 5, 5), -1px -1px 5px rgb(65, 63, 63),
     1px -1px 5px rgb(65, 63, 63), -1px 1px 5px rgb(65, 63, 63),
     1px 1px 5px rgb(65, 63, 63);
@@ -454,10 +467,58 @@ galler a {
 /* Media Queries  */
 @media (max-width: 1100px) {
   .section-showcase {
-    height: 700px;
+    height: 800px;
+  }
+  .showcase-headings p {
+    padding: 20px 10px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .showcase-headings button {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .showcase-headings h1 {
+    font-size: 40px;
+  }
+  .showcase-headings p {
+    padding: 15px 10px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 770px) {
+  .container {
+    padding: 0;
+  }
+  .navbar .container {
+    flex-direction: column;
+  }
+  .burger {
+    display: block;
+  }
+  .nav-item-container {
+    display: none;
+  }
+  .nav-item-container.active {
+    display: flex;
+    flex-direction: column;
+    /* background: aliceblue; */
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(215, 223, 252, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(215, 223, 252, 1) 84%
+    );
+  }
+  .nav-item-container li {
+    padding: 50px 0;
+  }
+  .nav-item-container li:hover {
+    background: rgba(98, 0, 255, 0.178);
+  }
+
   .section-showcase .container p {
     font-size: 15px;
     line-height: 25px;
@@ -474,6 +535,13 @@ galler a {
   }
   .section-second .container h1 {
     letter-spacing: 1px;
+  }
+  .section-third {
+    height: 100%;
+  }
+  .gallery a {
+    width: 250px;
+    height: 350px;
   }
   .section-fifth {
     height: 100%;
@@ -547,7 +615,7 @@ galler a {
     margin-top: 20px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .section-showcase h1 {
     font-size: 30px;
     letter-spacing: 1px;
@@ -625,7 +693,7 @@ galler a {
 }
 @keyframes shadow-pulse {
   0% {
-    box-shadow: 0 0 0 0px rgba(4, 7, 12, 0.952);
+    box-shadow: 0 0 0 0px rgba(95, 147, 238, 0.952);
   }
   100% {
     box-shadow: 0 0 0 25px rgba(7, 12, 22, 0.034);
