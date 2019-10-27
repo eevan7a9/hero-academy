@@ -14,8 +14,7 @@ body {
   background: whitesmoke;
 }
 main {
-  background: url("https://cdn.pixabay.com/photo/2012/04/13/12/58/globe-32299_960_720.png")
-    rgba(199, 192, 184, 0.69);
+  background: url("../img/globe.png") rgba(199, 192, 184, 0.69);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -422,8 +421,7 @@ galler a {
 .section-contact {
   background: rgba(65, 63, 63, 0.151);
   padding: 50px 0 150px 0;
-  background: rgba(65, 63, 63, 0.151)
-    url("https://cdn.pixabay.com/photo/2012/04/13/12/33/cityscape-32210_960_720.png");
+  background: rgba(65, 63, 63, 0.151) url("../img/cityscape.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
