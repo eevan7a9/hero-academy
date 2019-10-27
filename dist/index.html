@@ -21,16 +21,16 @@
           <img src="./img/hero_logo.png" alt="logo" />
           <p>Hero Academy</p>
         </div>
-        <div onclick="toggleNavbar()" class="burger"><i class="fa fa-bars" style="font-size: 30px;"></i></div>
+        <div class="burger"><i onclick="toggleMenu()" class="fa fa-bars" style="font-size: 30px;"></i></div>
         <ul class="nav-item-container">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" onclick="scrollInto('#home'); toggleMenu()">Home</a></li>
+          <li><a href="#" onclick="scrollInto('#gallery'); toggleMenu()">Gallery</a></li>
+          <li><a href="#" onclick="scrollInto('#about'); toggleMenu()">About</a></li>
+          <li><a href="#" onclick="scrollInto('#contact'); toggleMenu()">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <section class="section-showcase">
+    <section class="section-showcase" id="home">
       <div class="container">
         <div class="showcase-headings">
           <h1>HERO</h1>
@@ -50,8 +50,10 @@
         </div>
       </div>
     </section>
-    <section class="section-second">
-      <div class="overlay">
+    <section class="first-second-container">
+
+      <section class="section-first">
+
         <div class="container">
           <h3>
             Brave & Bold.
@@ -63,9 +65,33 @@
             around a rock.
           </p>
         </div>
-      </div>
+
+      </section>
+      <section class="section-second">
+        <div class="container" id="about">
+          <div class="right">
+            <div class="vision">
+              <h1>Vision</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus hic ut, provident ex esse quos
+                perferendis aliquid, atque incidunt molestias laudantium quaerat veritatis magni temporibus nobis a
+                eligendi illum impedit.</p>
+            </div>
+            <div class="mission">
+              <h1>Mission</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi optio fugiat quae magni aut,
+                voluptatum distinctio? Est omnis, necessitatibus commodi amet corporis, provident eveniet fugiat error,
+                laboriosam quisquam officia dolor.</p>
+            </div>
+          </div>
+          <div class="left">
+            <div class="image-container">
+              <img src="./img/about_img.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-    <section class="section-third">
+    <section class="section-third" id="gallery">
       <div class="container">
         <h1>GALLERY OF HEROES</h1>
         <div class="gallery">
@@ -135,7 +161,7 @@
       </div>
     </section>
 
-    <section class="section-footer">
+    <section class="section-footer" id="contact">
       <div class="container">
         <div class="social-net">
           <h1>Social Network</h1>
