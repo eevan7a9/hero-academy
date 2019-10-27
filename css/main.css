@@ -82,9 +82,9 @@ img{width:100%}
 .modal-container{display:flex;align-items:center;justify-content:center;height:100%;width:100%;background:#22222287;position:fixed;top:0;left:0}
 .modal{background:#fff;width:500px;height:500px;display:flex;flex-direction:column;padding:0 0 0 20px;align-items:center;border-radius:10px;box-shadow:#4d68c0 1px 1px 9px 6px}
 .form-container{display:flex;align-items:center;margin-top:10px}
-.modal label{padding-right:10px}
-.modal button{font-size:14px;cursor:pointer;height:100%;padding:0 20px;border-color:#3179fd;color:#3179fd;font-weight:600}
-.modal input{max-width:200px}
+.modal label{padding-right:10px;font-family:"Luckiest Guy",cursive;font-size:18px}
+.modal button{font-size:14px;cursor:pointer;height:100%;padding:10px 20px;border-color:#3179fd;color:#3179fd;font-weight:600}
+.modal input{max-width:200px;padding:10px 20px;font-size:16px}
 .modal img{height:200px;width:200px;margin-top:50px}
 .modal h1{margin-bottom:10px;font-family:Staatliches,cursive}
 .modal .close{width:100%;padding-top:20px;padding-right:20px;display:flex;justify-content:flex-end}
