@@ -106,14 +106,16 @@ img {
   align-items: center;
   background: rgba(65, 63, 63, 0.151);
   height: 100vh;
+  width: 100%;
 }
 .section-showcase .container {
   display: grid;
   grid-template-columns: repeat(1fr, 2);
+  padding-bottom: 50px;
 }
 .showcase-headings {
   grid-column: 1/2;
-  padding: 0 20px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,9 +166,6 @@ img {
 }
 .showcase-image {
   grid-column: 2/2;
-}
-.showcase-image img {
-  border-top-right-radius: 80%;
 }
 /* first second contaienr */
 .first-second-container {
@@ -293,7 +292,7 @@ img {
   grid-template-rows: 310px 310px;
 }
 .gallery a {
-  border: rgb(49, 121, 253) solid 3px;
+  border: aliceblue solid 3px;
   padding: 10px;
   background: rgba(119, 119, 119, 0.459);
 }
@@ -423,10 +422,15 @@ galler a {
 .section-contact {
   background: rgba(65, 63, 63, 0.151);
   padding: 50px 0 150px 0;
+  background: rgba(65, 63, 63, 0.151)
+    url("https://cdn.pixabay.com/photo/2012/04/13/12/33/cityscape-32210_960_720.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 .section-contact .container {
   border-radius: 10px;
-  border: rgb(49, 121, 253) solid 4px;
+  border: aliceblue solid 4px;
   background: rgba(119, 119, 119, 0.459);
   padding: 70px 0;
   text-align: center;
@@ -466,7 +470,7 @@ galler a {
   text-align: right;
 }
 .section-contact input {
-  border: solid rgb(49, 121, 253) 4px;
+  border: solid aliceblue 4px;
   border-radius: 5px;
   background: rgba(119, 119, 119, 0.459);
   width: 100%;
@@ -485,7 +489,7 @@ galler a {
   font-family: "Staatliches", cursive;
   letter-spacing: 1px;
   resize: vertical;
-  border: solid rgb(49, 121, 253) 4px;
+  border: solid aliceblue 4px;
   border-radius: 5px;
   background: rgba(14, 4, 4, 0.144);
   font-size: 20px;
@@ -495,9 +499,17 @@ galler a {
   background: aliceblue;
   transition: 1s;
 }
+.section-contact button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Staatliches", cursive;
+  cursor: pointer;
+}
 /* section footer */
 .section-footer {
-  background: #333;
+  border-top: aliceblue solid 4px;
+  /* border-bottom: aliceblue solid 4px; */
+  background: rgb(43, 17, 0);
   color: whitesmoke;
   padding: 100px 0;
 }
@@ -531,7 +543,7 @@ galler a {
 }
 .credit,
 .credit a {
-  background: #333;
+  background: rgb(43, 17, 0);
   color: whitesmoke;
   text-align: center;
   padding: 20px;
@@ -786,6 +798,7 @@ galler a {
   .section-contact .input-container,
   .section-contact .textarea-container {
     width: 80%;
+    align-items: center;
   }
   .modal {
     width: 400px;
