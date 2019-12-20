@@ -24,3 +24,6 @@ const toggleMenu = function () {
   nav_item_container.classList.toggle("active");
 
 }
+$(function () {
+  const $gallery = $(".gallery a").simpleLightbox();
+});
